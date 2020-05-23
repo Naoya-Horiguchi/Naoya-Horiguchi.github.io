@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Naoya Horiguchi.github.io
-
 - OSS 開発者。Linux カーネルや Hyperledger コミュニティで活動しています。
 - Twitter: [@nhoriguchi](https://twitter.com/nhoriguchi), [GitHub](https://github.com/Naoya-Horiguchi)
 
@@ -13,35 +11,8 @@ layout: default
 
 # ブログ的ななにか
 
-## (2020/05/23 03:22)
+基本的に普段思ったことなどは Twitter に流すようにしているが、たまにまとまった情報を公開したいと思うことがあり、Qiita やはてなは色々合わないなと思うことがあったので、ちょうどよい GitHub Pages のホスティング機能を利用してみる。
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## GitHub Coder Owner (2020/05/23 03:22)
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-``` js//Javascriptcodewithsyntaxhighlighting.varfun=functionlang(l)dateformat.i18n=require('./lang/'+l)returntrue;```
-
-``` js//Javascriptcodewithsyntaxhighlighting.varfun=functionlang(l)dateformat.i18n=require('./lang/'+l)returntrue;```ruby#RubycodewithsyntaxhighlightingGitHubPages::Dependencies.gems.eachdo|gem,version|s.add_dependency(gem,"=#version")end```
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
+GitHub には [code owner 機能](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners) というのがある。特定のディレクトリやファイルごとに所有者 (メイン担当者) を決めるというもので、PR が登録されたときに、その PR が変更するディレクトリやファイルに応じて自動的にレビュー担当者を決めてくれる。実運用していれば、誰がレビューするかお見合い状態になって、開発プロセスが遅くなってしまうということがあるので、この手の細かい自動化は重要である。私が最近主に活動している MinBFT では https://github.com/hyperledger-labs/minbft/pull/187/files のとおり担当者が決まった。PR の登録者がメンテナであることが多いため、全てのディレクトリ・ファイルに二人を担当することにしている。その結果、私は全部担当者になってしまったように見えるが、これでどこまで機能するか...。
