@@ -1,0 +1,2 @@
+start:
+	jekyll s
