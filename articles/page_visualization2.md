@@ -1,3 +1,13 @@
 # ページ可視化の時間発展
 
-<video src="../movies/page_visualization_kenrel_build.mp4" ></video>
+[先日書いたとおり](./page_visualization.html) ページ状態の可視化の絵を出力できるようになったので、適当なワークロードの時間発展を見てみました。
+
+以下が結果の動画ですが、これはメモリ 8GB の VM でカーネルビルドを実行中の様子を表したものです。一コマが 5~6 秒程度の間隔で、ビルド自体は 10 分ほどなので約 100 コマの動画です。
+
+<video controls width="600">
+<source src="../movies/page_visualization_kernel_build.mp4" type="video/mp4">
+</video>
+
+初期状態では緑のページ (buddy) が目立ちますが、これが時間経過とともに赤い lru ページに変化していきます。コンパイル処理のメモリ使用の様子を表しています。後半はほぼ全て赤い lru ページに占められるようになります。最後の最後で多数のページが buddy になっていますが、これは `sync` と `echo 3 > /proc/sys/vm/drop_caches` を実行したためです。
+
+それほど面白い結果にはなりませんでしたが、まあ、一歩前進ということで。
