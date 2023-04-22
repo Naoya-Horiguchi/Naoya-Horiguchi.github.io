@@ -11,3 +11,4 @@ layout: default
 - [Hyperledger Fabric の台帳スナップショット機能の利用例](https://nhoriguchi.github.io/articles/ledger_snapshot.html) (2020/12/09)
 - [Dirty Pipe 脆弱性について](https://nhoriguchi.github.io/articles/dirty_pipe.html) (2022/03/22)
 - [MADV_COLLAPSE](https://nhoriguchi.github.io/articles/madv_collapse.html) (2022/10/24)
+- [データベースにおける MMAP](https://nhoriguchi.github.io/articles/mmap_in_dbms.html) (2023/04/23)
